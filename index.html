@@ -1,99 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- source to input the fab icons "https://cdnjs.com/libraries/font-awesome" -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body>
-  <header>
-    <!-- Navigation bar option begin (reference taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black)-->
-    <nav>
-      <ul>
-        <li id="page1"><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html" target="_blank">About Me</a></li>
-        <li><a href="index.html">Blog</a></li>
-      </ul>
-    </nav>
-    <!-- Navigation bar option end -->
-  </header>
-  <main>
-    <div id="pp">
-      <img src="pp.jpg" alt="Simon">
-    </div>
-    <div class="Content">
-      <h1>Hi! I am Simon Pariyar.</h1>
-      <h3>Agricultural Engineer</h3>
-      <p>A Dedicated and enthusiastic Agricultural Engineer seeking for an opportunity to utilize my technical skills in a challenging working environment to boost up my skills and learnings and become a valuable asset to the organization that I work for.</p>
-    </div>
-    <h3 id="education">Academic Background</h3>
-    <!-- reference for table for this source "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_table_center" -->
-    <!-- Table Option Begin -->
-    <table>
-      <tr>
-        <th>S.No</th>
-        <th>Year</th>
-        <th>Degree</th>
-        <th>Institution</th>
-        <th>Percentage</th>
-      </tr>
-      <tr>
-        <td>1.</td>
-        <td>2016-2021</td>
-        <td>Bachelor Degree</td>
-        <td>Purwanchal Campus, Dharan</td>
-        <td>75.8%</td>
-      </tr>
-      <tr>
-        <td>2.</td>
-        <td>2014-2016</td>
-        <td>+2</td>
-        <td>Omega International H. Secondary School</td>
-        <td>74.80%</td>
-      </tr><tr>
-        <td>3.</td>
-        <td>2016</td>
-        <td>School Leaving Certificate</td>
-        <td>Motherland English Boarding School</td>
-        <td>82.5%</td>
-      </tr>
-    </table>
-    <!-- Table option End -->
-    <div class="container">
-      <div class="specification">
-        <h3> Skills:</h3>
-        <p>- Microsoft Package</p>
-        <p>- AutoCAD</p>
-        <p>- AcrGIS</p>
-        <p>- Team Work</p>
-      </div>
-      <div class="specification">
-        <h3>Experieces:</h3>
-        <p>- Habibiz Shuwarma Cafe</p>
-        <p>- INK Consult Pvt. Ltd</p>
-        <p>- Alpha Shoe Center</p>
-      </div>
-      <div class="specification">
-        <h3>Hobbies:</h3>
-        <p>- Singing</p>
-        <p>- Playing Guitar</p>
-        <p>- Travel</p>
-        <p>- Dancing</p>
-      </div>
-    </div>  
-  </main>
-  <footer class="footer">
-     <!-- Links Option Begin -->
-    <ul>
-      <!-- source to input the fab icons "https://cdnjs.com/libraries/font-awesome" -->
-      <li><a href="https://www.facebook.com/christian.simonsamrat" target="_blank"><i class="fab fa-facebook-f"></i></a>Facebook</li>
-      <li><a href="https://www.instagram.com/cmongrace/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>Instagram</li>
-      <li><a href="https://www.linkedin.com/in/simon-pariyar-96093819b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>  LinkedIn</li>
-    </ul>
-     <!-- Links Option End -->
-  </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <style>
+            header {
+                background-color: #666;
+                padding: 2px;
+                text-align: center;
+                /* font-size: 35px; */
+                color: white;
+            }
+            #map {
+            height: 100%;
+            }
+
+            /* Optional: Makes the sample page fill the window. */
+            html,
+            body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            }
+        </style>
+        <script>
+            let map;
+    
+            function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 28.2096, lng: 83.9856 },
+                zoom: 10,
+            });
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>My First Story Map</h1>
+        </header>
+        <div id="map"></div>
+        
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <!-- *** STUDENTS: Replace YOUR_API_KEY text with provided key in class for property src in next line *** -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
+        </script>
+    </body>
 </html>
