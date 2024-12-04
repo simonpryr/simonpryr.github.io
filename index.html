@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
+  <meta name="description" content="Goal 1: To make the existing website navigatin more user friendly, and Goal 2: To improve the readability of the existing website ">
+  <meta name="keywords" content="HTML,CSS,Resume,UI,Accessibility">
+  <meta name="author" content="Simon Pariyar">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
   <!-- source to input the fab icons "https://cdnjs.com/libraries/font-awesome" -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
   <header>
-    <!-- Navigation bar option begin (reference taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black)-->
-    <nav>
+<!--     New Navigation Bar to make it more user Friendly, referece taken from https://www.youtube.com/watch?v=wHFflWvii3M&list=LL&index=2 -->
+    <div class="menu-bar">
       <ul>
-        <li id="page1"><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html" target="_blank">About Me</a></li>
-        <li><a href="index.html">Blog</a></li>
+        <li class="active"><a href="#"><i class="fa fa-solid fa-house-user"></i>Home</a></li>
+        <li><a href="aboutme.html" target="_blank"><i class="fa fa-user"></i>About Me</a></li>
+        <li><a href="#"><i class="fa fa-thin fa-pen-to-square"></i></i>Blog</a></li>
       </ul>
-    </nav>
-    <!-- Navigation bar option end -->
+    </div>
   </header>
   <main>
     <div id="pp">
@@ -27,7 +32,11 @@
     <div class="Content">
       <h1>Hi! I am Simon Pariyar.</h1>
       <h3>Agricultural Engineer</h3>
-      <p>A Dedicated and enthusiastic Agricultural Engineer seeking for an opportunity to utilize my technical skills in a challenging working environment to boost up my skills and learnings and become a valuable asset to the organization that I work for.</p>
+      <p>A Dedicated and enthusiastic Agricultural Engineer seeking for an opportunity to utilize my technical skills in
+        a challenging working environment to boost up my skills and learnings and become a valuable asset to the
+        organization that I work for. I have a strong desire to enhance my skills in the field of GIS as a Cartographer
+        to
+        facilitate in the field of agricultural mapping and decision making. </p>
     </div>
     <h3 id="education">Academic Background</h3>
     <!-- reference for table for this source "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_table_center" -->
@@ -53,7 +62,8 @@
         <td>+2</td>
         <td>Omega International H. Secondary School</td>
         <td>74.80%</td>
-      </tr><tr>
+      </tr>
+      <tr>
         <td>3.</td>
         <td>2016</td>
         <td>School Leaving Certificate</td>
@@ -83,17 +93,21 @@
         <p>- Travel</p>
         <p>- Dancing</p>
       </div>
-    </div>  
+    </div>
   </main>
   <footer class="footer">
-     <!-- Links Option Begin -->
+    <!-- Links Option Begin -->
     <ul>
       <!-- source to input the fab icons "https://cdnjs.com/libraries/font-awesome" -->
-      <li><a href="https://www.facebook.com/christian.simonsamrat" target="_blank"><i class="fab fa-facebook-f"></i></a>Facebook</li>
-      <li><a href="https://www.instagram.com/cmongrace/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>Instagram</li>
-      <li><a href="https://www.linkedin.com/in/simon-pariyar-96093819b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>  LinkedIn</li>
+      <li><a href="https://www.facebook.com/christian.simonsamrat" target="_blank"><i
+            class="fab fa-facebook-f"></i></a>Facebook</li>
+      <li><a href="https://www.instagram.com/cmongrace/?hl=en" target="_blank"><i
+            class="fab fa-instagram"></i></a>Instagram</li>
+      <li><a href="https://www.linkedin.com/in/simon-pariyar-96093819b/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a> LinkedIn</li>
     </ul>
-     <!-- Links Option End -->
+    <!-- Links Option End -->
   </footer>
 </body>
+
 </html>
