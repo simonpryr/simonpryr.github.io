@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More About Me</title>
+    <title>About Me</title>
+    <meta name="description" content="Goal 1: To make the existing website navigatin more user friendly, and Goal 2: To improve the readability of the existing website ">
+    <meta name="keywords" content="HTML,CSS,Resume,UI,Accessibility">
+    <meta name="author" content="Simon Pariyar">
     <link rel="stylesheet" href="style.css">
-     <!-- source to input the fab icons "https://cdnjs.com/libraries/font-awesome" -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- source to input the fab icons "https://cdnjs.com/libraries/font-awesome" -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
     <header>
-          <!-- Navigation bar option begin (reference taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black)   -->
-        <nav>
+<!--         New navigation bar to make it more user friendly, reference taken from https://www.youtube.com/watch?v=wHFflWvii3M&list=LL&index=2  -->
+        <div class="menu-bar">
             <ul>
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li id="page2"><a href="aboutme.html" target="_blank">About Me</a></li>
-            <li><a href="index.html">Blog</a></li>
+                <li><a href="index.html"><i class="fa fa-solid fa-house-user"></i>Home</a></li>
+                <li class="active"><a href="#"><i class="fa fa-user"></i>About Me</a></li>
+                <li><a href="#"><i class="fa fa-thin fa-pen-to-square"></i></i>Blog</a></li>
             </ul>
-        </nav>
-            <!-- Navigation bar option end -->
+        </div>
+        <!-- Navigation bar option end -->
     </header>
     <main>
         <div class="section">
@@ -27,7 +32,11 @@
                     <h1>More About Me</h1>
                 </div>
                 <div class="content1">
-                    <h2>Singing is not just a hobby or a pastime for me; it's the very essence of my soul. From the moment I first discovered my vocal cords could produce melodic sounds, I was captivated by the sheer magic of music. Singing has also taught me valuable life lessons. It's about discipline, practice, and continuous self-improvement. It's about finding the right pitch, hitting the high notes, and perfecting the art of storytelling through music.</h2>
+                    <h2>Singing is not just a hobby or a pastime for me; it's the very essence of my soul. From the
+                        moment I first discovered my vocal cords could produce melodic sounds, I was captivated by the
+                        sheer magic of music. Singing has also taught me valuable life lessons. It's about discipline,
+                        practice, and continuous self-improvement. It's about finding the right pitch, hitting the high
+                        notes, and perfecting the art of storytelling through music.</h2>
                 </div>
                 <div class="image-section">
                     <img src="singing.jpg" alt="Singing in a concert">
@@ -35,10 +44,13 @@
             </div>
         </div>
         <div class="social-media">
-            <a href="https://www.facebook.com/christian.simonsamrat" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/christian.simonsamrat" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/cmongrace/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/simon-pariyar-96093819b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/simon-pariyar-96093819b/" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
         </div>
     </main>
 </body>
+
 </html>
